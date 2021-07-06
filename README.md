@@ -1,43 +1,41 @@
-# Design an application for public health [OC-P3]
+# Anticipate the electricity consumption needs of buildings [OC-P4]
 
 ## **Problem to solve**
 
-The **"Public Health France"** agency has launched a call for projects to find innovative ideas for food-related applications. You want to participate and come up with an idea for an application.
+You work for **"the city of Seattle"**. To achieve its goal of being a neutral city in carbon emissions by 2050, your team is paying close attention to the emissions of buildings not intended for housing.
+
+### **Problem of the city of Seattle**
+Thorough readings were taken by your agents in 2015 and 2016. However, these readings are expensive to obtain, and from those already taken, you want to try to predict the CO2 emissions and the total energy consumption of buildings. for which they have not yet been measured.
 
 ## **Your mission**
 
-After reading the call for projects, here are the different stages that you have identified:
+You've just come out of a briefing meeting with your team. Here is a summary of your mission:
 
-1. Process the data set in order to locate relevant variables for future processing. Automate these treatments to avoid repeating these operations.
-2. Throughout the analysis, produce visualizations to better understand the data. Perform a univariate analysis for each variable of interest, in order to synthesize its behavior.
-3. Confirm or disprove the hypotheses using multivariate analysis. Perform the appropriate statistical tests to verify the significance of the results.
-4. Develop an idea for an application. Identify arguments justifying the feasibility (or not) of the application from Open Food Facts data.
-5. Write an exploration report and pitch your idea during the project defense.   
+1. Perform a short exploratory analysis.
+2. Test different prediction models in order to best answer the problem.
+
+### **Considerations**
+
+- The goal is to do without annual consumption readings (beware of data leaks), but nothing prevents you from deducing simpler variables (nature and proportions of energy sources used).
+- Pay close attention to the treatment of the different variables, both to find new information (can we deduce interesting things from a simple address?) And to optimize performance by applying simple transformations to the variables (normalization, going to log, etc.).
+- Set up a rigorous evaluation of regression performance, and optimize hyperparameters and ML algorithm choice using cross-validation
 
 ## **The data**
 
-**The Open Food Fact** dataset is available on the official [website](https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv). At the same time, you can check different types of files [here](https://world.openfoodfacts.org/data).
+Based on the official site of [**Seattle Open Data**](https://data.seattle.gov/), , we can see the dataset **metadata** to know all features
 
-Variables are defined at this [address](https://world.openfoodfacts.org/data/data-fields.txt).
+- [**2015**](https://data.seattle.gov/dataset/2015-Building-Energy-Benchmarking/h7rm-fz6m)
+- [**2016**](https://data.seattle.gov/dataset/2016-Building-Energy-Benchmarking/2bpz-gwpy)
 
-The fields are separated into four sections:
-
-- General information on the product sheet: name, date of modification, etc.
-- A set of tags: product category, location, origin, etc.
-- The ingredients of the products and their possible additives.
-- Nutritional information: amount in grams of a nutrient per 100 grams of the product.
-
-For more details / information about, you can visit the following links
-- [Open Food Facts](https://world.openfoodfacts.org/)
-- [Nutri-Score](https://www.santepubliquefrance.fr/determinants-de-sante/nutrition-et-activite-physique/articles/nutri-score)
+On the other hand, we get the means of [**Energy Star Score**](https://www.energystar.gov/buildings/benchmark/analyze_benchmarking_results)
 
 ## **Repository file structure**
 
-- notebook.ipynb: Notebook with the final work
-- notebook_draft.ipynb: Pre-exploratory data analysis
+- cleaning_notebook.ipynb: Cleaning notebook
+- modeling_notebook.ipynb: Notebook with predictions
 - img: Images and graphs of the project
 - supports: Folder with documents to support the work done
-    - Project 3 presentation: Project presentation in French
+    - Project 4 presentation: Project presentation in French
 
 ### **Final note**
 
