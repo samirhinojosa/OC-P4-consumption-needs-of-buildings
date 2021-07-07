@@ -22,7 +22,12 @@ You've just come out of a briefing meeting with your team. Here is a summary of 
 
 ## **The data**
 
-Based on the official site of [**Seattle Open Data**](https://data.seattle.gov/), , we can see the dataset **metadata** to know all features
+The datasets are availabe on the following links
+
+- [**2015**](https://www.kaggle.com/city-of-seattle/sea-building-energy-benchmarking#2015-building-energy-benchmarking.csv)
+- [**2016**](https://www.kaggle.com/city-of-seattle/sea-building-energy-benchmarking?select=2016-building-energy-benchmarking.csv)
+
+Based on the official site of [**Seattle Open Data**](https://data.seattle.gov/), we can see the dataset **metadata** to know all features
 
 - [**2015**](https://data.seattle.gov/dataset/2015-Building-Energy-Benchmarking/h7rm-fz6m)
 - [**2016**](https://data.seattle.gov/dataset/2016-Building-Energy-Benchmarking/2bpz-gwpy)
