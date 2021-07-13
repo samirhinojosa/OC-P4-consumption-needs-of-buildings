@@ -9,7 +9,7 @@ def display_circles(pcs, n_comp, pca, axis_ranks, labels=None, label_rotation=0,
         if d2 < n_comp:
 
             # initialisation de la figure
-            fig, ax = plt.subplots(figsize=(7,6))
+            fig, ax = plt.subplots(figsize=(10,9))
 
             # détermination des limites du graphique
             if lims is not None :
