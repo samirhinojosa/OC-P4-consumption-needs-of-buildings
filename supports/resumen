@@ -1,0 +1,7 @@
+- Agregue varibale ratio de electricidad
+- transformación de variables a 
+    PropertyGFABuilding(s)
+    PropertyGFATotal
+    SiteEnergyUse(kBtu)
+    GHGEmissions(MetricTonsCO2e)
+- OneHotEncoder porque LabelEncoder es para target variables
