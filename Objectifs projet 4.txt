@@ -1,0 +1,51 @@
+🎯Transformer les variables pertinentes d'un modèle d'apprentissage supervisé
+
+❒ Les variables catégorielles ont été identifiées et transformées de façon adaptée
+
+❒ Les variables sont normalisées (si besoin)
+
+❒ Des transformations mathématiques sont utilisées pour transformer les distributions variables (si besoin)
+
+ 
+
+🎯Mettre en place le modèle d'apprentissage supervisé adapté au problème métier
+
+❒ La/les variables cibles pertinentes ont été choisies
+
+❒ Il n’y a pas de problème de data leakage (= avoir des variables trop corrélées à la variable cible et inconnues a priori dans les données input de la régression)
+
+❒ Plusieurs algorithmes de régression ont été essayés de façon cohérente, en partant des plus simples vers les plus complexes (au minimum un linéaire et un non linéaire)
+
+ 
+
+🎯Évaluer les performances d’un modèle d'apprentissage supervisé
+
+❒ Une métrique adaptée a été choisie (RMSE, écart moyen)
+
+❒ D'autres indicateurs de performance que le score ont été explorés pour comprendre les résultats (coefficients des variables en fonction de la pénalisation, visualisation des erreurs en fonction des variables du modèle, temps de calcul...)
+
+❒ Les données ont été séparées en train/test pour les évaluer de façon pertinente et détecter l'overfitting
+
+❒ Une baseline a été mise en place pour évaluer le pouvoir prédictif du modèle choisi (dummyRegressor)
+
+❒ L'ensemble des résultats sont présentés en allant des modèles les plus simples aux plus complexes
+
+ 
+🎯Adapter les hyperparamètres d'un algorithme d'apprentissage supervisé afin de l'améliorer
+
+❒ Une validation croisée a été mise en place pour optimiser les hyperparamètres
+
+❒ Les hyperparamètres pertinents sont optimisés dans les différents algorithmes
+
+❒ Le choix final d'algorithme et d'hyperparamètres sont justifiés
+
+ 
+
+🎯Respect des consignes
+❒ Les livrables sont complets
+
+❒ Les livrables ont été déposés 48h à l'avance
+
+❒ L'export de la base finale est présent dans le code
+
+❒ Le temps de présentation est bien géré par l'étudiant
